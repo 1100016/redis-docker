@@ -17,4 +17,5 @@ jobs:
     - name: Build the Docker image
       run: |
         echo "{{ secrets.DOCKER_ACCESS_TOKEN }}" docker login --username {{ secrets.DOCKER_USERNAME }} --password-stdin
-        docker buildx build --platform armhf --file Dockerfile --tag redis:4.7.2 .
+        docker buildx build --platform armhf --file Dockerfile --tag stakaha/redis:4.7.2 .
+        docker push stakaha/redis:4.7.2
