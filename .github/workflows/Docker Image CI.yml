@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker buildx build --platform linux/arm7v --file Dockerfile --tag redis:4.7.2 .
+      run: docker buildx build --platform linux/arm/7v --file Dockerfile --tag redis:4.7.2 .
