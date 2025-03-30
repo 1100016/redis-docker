@@ -29,4 +29,4 @@ jobs:
         context: .
         platforms: linux/arm/v7
         push: true
-        tags: stakaha/redis:4.7.2
+        tags: stakaha/redis:7.4.2
